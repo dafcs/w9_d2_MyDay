@@ -18,7 +18,7 @@ const createRouter = function (collection) {
       });
   });
 
-  //gets 1 item in data
+  //gets 1 item in data 
   router.get('/:id', (req, res) => {
     const id = req.params.id;
     collection
@@ -31,7 +31,7 @@ const createRouter = function (collection) {
       });
   });
 
-  //add 1 item
+  //add 1 item - NEW
   router.post('/',(req,res) => {
   const newSighting = req.body
   collection.insertOne(newSighting)
@@ -43,7 +43,7 @@ const createRouter = function (collection) {
   });
   })
 
-  //(extention) remove 1 item
+  //(extention) remove 1 item - NEW
   router.delete('/:id',(req,res) => {
     const id = req.params.id
     collection.deleteOne({_id: ObjectID(id)})
