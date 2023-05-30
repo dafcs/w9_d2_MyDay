@@ -27,7 +27,7 @@ const SightingsForm = ({addSighting}) => {
             date: "",
         });
     }
-
+    
     return (
         <form onSubmit={onSubmit} id="sightings-form" >
             <h2>Add a Sighting</h2>
